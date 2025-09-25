@@ -292,6 +292,17 @@ java -esa -cp bin edu.ccrm.CCRMApp
 ## Disable assertions (default)
 java -da -cp bin edu.ccrm.CCRMApp
 
+# 🤝 Contributing
+Fork the repository
+
+Create a feature branch: git checkout -b feature/new-feature
+
+Commit changes: git commit -am 'Add new feature'
+
+Push to branch: git push origin feature/new-feature
+
+Submit a pull request
+
 # 📄 License
 This project is created for educational purposes as part of Java programming coursework.
 
