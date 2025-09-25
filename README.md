@@ -1,8 +1,6 @@
-🏫 Campus Course & Records Manager (CCRM)
+# 🏫 Campus Course & Records Manager (CCRM)
 
-A comprehensive Java SE console application for managing students, courses, enrollments, and grades in an educational institution.
-
-📖 Table of Contents
+# 📖 Table of Contents
 - [Project Overview](#-project-overview)
 - [Features](#-features)
 - [Technology Stack](#-technology-stack)
@@ -17,7 +15,7 @@ A comprehensive Java SE console application for managing students, courses, enro
 - [Screenshots](#-screenshots)
 - [Contributing](#-contributing)
 
-🎯 Project Overview
+# 🎯 Project Overview
 
 CCRM is a console-based Java application that demonstrates advanced Java SE features including OOP principles, design patterns, file I/O with NIO.2, Streams API, and modern Java development practices.
 
@@ -28,9 +26,9 @@ Key Objectives:
 - Import/export data using CSV files
 - Perform backup operations with recursion
 
-✨ Features
+# ✨ Features
 
- 🔧 Core Functionality
+ # 🔧 Core Functionality
 - Student Management: Add, update, list, and deactivate students
 - Course Management: Create, search, filter courses by department/instructor
 - Enrollment System: Enroll/unenroll students with credit limit validation
@@ -38,7 +36,7 @@ Key Objectives:
 - File Operations: CSV import/export, backup/restore functionality
 - Reporting: GPA distribution, enrollment reports, top students
 
-💻 Technical Features
+# 💻 Technical Features
 - OOP Principles: Encapsulation, Inheritance, Polymorphism, Abstraction
 - Design Patterns: Singleton, Builder
 - Exception Handling: Custom exceptions, try-catch-finally
@@ -48,14 +46,14 @@ Key Objectives:
 - Lambda Expressions: Functional programming
 - Recursion: Directory traversal and size calculation
 
-🛠 Technology Stack
+# 🛠 Technology Stack
 
 - Java Version: Java SE 8+
 - Build Tool: Pure Java (no external dependencies)
 - File Format: CSV for data exchange
 - Platform: Cross-platform console application
 
-📥 Installation
+# 📥 Installation
 
 Prerequisites
 - Java JDK 8 or higher
@@ -78,7 +76,7 @@ Windows Installation Steps
 JAVA_HOME=C:\Program Files\Java\jdk-11.0.xx
 PATH=%JAVA_HOME%\bin;%PATH%
 
-🚀 How to Run
+# 🚀 How to Run
 1. Clone or download the project
 git clone <repository-url>
 cd CCRM
@@ -94,8 +92,8 @@ java -ea -cp bin edu.ccrm.CCRMApp
 
 5. Or run without assertions
 java -cp bin edu.ccrm.CCRMApp
-
-📁 Project Structure
+ 
+# 📁 Project Structure
 
 CCRM/
 ├── src/edu/ccrm/
@@ -128,7 +126,7 @@ CCRM/
 │   └── courses.csv                  # Sample course data
 └── README.md                        # This file
 
-📜 Java Evolution
+# 📜 Java Evolution
 
 Java Version Timeline
 1996: Java 1.0 - Initial release
@@ -153,7 +151,7 @@ Java Version Timeline
 
 2023: Java 21 - Virtual threads, pattern matching
 
-☕ Java Platforms Comparison
+# ☕ Java Platforms Comparison
 
 Platform	Full Name	Purpose	Use Cases
 Java SE	Standard Edition	Desktop/server apps	Desktop applications, utilities
@@ -172,7 +170,7 @@ CCRM demonstrates Java SE features for desktop application development with:
 
 4. No external dependencies
 
-🏗 JDK/JRE/JVM Architecture
+# 🏗 JDK/JRE/JVM Architecture
 
 Components Overview
 
@@ -213,12 +211,12 @@ Interaction Flow
 
 3. Platform Independence: Write once, run anywhere (WORA) principle
 
-📖 Usage Guide
+# 📖 Usage Guide
 
 Sample Commands
 
-Student Management:
-# Add a new student
+# Student Management:
+## Add a new student
 Enter Student ID: S005
 Enter Registration Number: 2023005
 Enter Full Name: Michael Chen
@@ -227,8 +225,8 @@ Enter Email: michael.chen@university.edu
 # Generate transcript
 Enter Student ID: S001
 
-Course Management:
-# Add a new course
+# Course Management:
+## Add a new course
 Enter Course Code: CS201
 Enter Course Title: Advanced Programming
 Enter Credits: 4
@@ -236,27 +234,27 @@ Enter Instructor ID: I005
 Enter Semester: FALL
 Enter Department: Computer Science
 
-Enrollment:
-# Enroll student in course
+# Enrollment:
+## Enroll student in course
 Enter Student ID: S001
 Enter Course Code: CS101
 
-# Error handling: Credit limit exceeded
+## Error handling: Credit limit exceeded
 Credit limit exceeded: Current=15, Attempted=4, Max=18
 
-Sample Data Files
+# Sample Data Files
 
-students.csv
+## students.csv
 id,regNo,fullName,email,active
 S001,2023001,John Doe,john.doe@university.edu,true
 S002,2023002,Jane Smith,jane.smith@university.edu,true
 
-courses.csv
+## courses.csv
 code,title,credits,instructorId,semester,department,active
 CS101,Introduction to Programming,3,I001,SPRING,Computer Science,true
 MATH201,Calculus I,4,I002,FALL,Mathematics,true
 
-📚 Syllabus Mapping
+# 📚 Syllabus Mapping
 
 
 Java Topic - Implementation Location - Demonstration
@@ -272,4 +270,33 @@ Enums	Semester.java, Grade.java	Enums with fields/methods
 Recursion	BackupService.java	Directory traversal
 Interfaces	Searchable.java	Functional interfaces
 
+# 🖼 Screenshots
+## 1. jdk-version
+![Image](https://github.com/user-attachments/assets/0bd96365-67b3-4130-aff2-8325bc480d72)
+## 2. Run-Command
+![Image](https://github.com/user-attachments/assets/c7abbd54-81eb-4ba9-937e-b8068a783a1f)
+## 3. File-Structure
+![Image](https://github.com/user-attachments/assets/fc8acbda-5a7b-47f7-bc00-3b8adf9ad313)
+## 4. Main-Menu
+![Image](https://github.com/user-attachments/assets/58f40c9f-41cd-4f5d-a0fb-cab8f4ffec1c)
+## 5. Student-Management 
+![Image](https://github.com/user-attachments/assets/228bd896-3c31-4f18-b120-2911edd56a08)
 
+# 🔧 Enabling Assertions
+## Enable assertions
+java -ea -cp bin edu.ccrm.CCRMApp
+
+## Enable system assertions only
+java -esa -cp bin edu.ccrm.CCRMApp
+
+## Disable assertions (default)
+java -da -cp bin edu.ccrm.CCRMApp
+
+# 📄 License
+This project is created for educational purposes as part of Java programming coursework.
+
+# 👨‍💻 Author
+KRISH
+Student ID: [24BCE10646]
+Course: Java Programming
+Institution: [VIT Bhopal University]
